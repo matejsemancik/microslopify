@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Microslopify",
+  "version": "1.0",
+  "description": "Replaces \"Microsoft\" with \"Microslop\" on web pages, preserving capitalization.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
